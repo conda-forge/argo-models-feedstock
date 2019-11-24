@@ -1,5 +1,5 @@
 {% set name = "argo-models" %}
-{% set version = "2.3.0.post1" %}
+{% set version = "2.4.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 969d066ed1f074de5bc8c9a50aea49665bf7178d15e0105f0bd7e45ea45eef0d
+  sha256: 041158c06fb6ed18b9b36364c709e85122a801b4617276c0c029233dd5cc7ebe
 
 build:
   noarch: python
