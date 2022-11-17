@@ -1,5 +1,5 @@
 {% set name = "argo-models" %}
-{% set version = "2.4.2" %}
+{% set version = "2.7.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 041158c06fb6ed18b9b36364c709e85122a801b4617276c0c029233dd5cc7ebe
+  sha256: 26162327e360627cf806223f6b2bb26fbfc7c9b66e1e056ba7101f114f4048e8
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -32,7 +32,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'Generated openapi models for Argo objects.'
+  summary: Generated openapi models for Argo objects.
   description: |
     argo-models is a argo namespaced package with the argo.models subpackage
     which contains the generated OpenAPI models from Argo.
